@@ -35,4 +35,4 @@ Let's both edit this next line to say something different, and push:
 
 The quick brown fox jumps over the lazy dog.
 
-And for our last trick, I will 
+And for our last trick, I will cause a merge conflict !
