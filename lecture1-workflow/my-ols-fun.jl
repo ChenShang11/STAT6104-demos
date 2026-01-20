@@ -21,5 +21,6 @@ Compute OLS estimator given response `Y` and covariates `X`
 """
 function my_ols(Y, X)
     beta_ols = inv(X'*X + 0.1 * I)*X'*Y # this is ridge now
+    # lasso is better
     return beta_ols
 end
