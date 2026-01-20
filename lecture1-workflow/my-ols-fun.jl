@@ -20,6 +20,6 @@ Compute OLS estimator given response `Y` and covariates `X`
 - `beta_ols`: linear parameter estimate, `d` dimensional array
 """
 function my_ols(Y, X)
-    beta_ols = inv(X'*X)*X'*Y
+    beta_ols = inv(X'*X + 0.1 * I)*X'*Y # this is ridge now
     return beta_ols
 end
