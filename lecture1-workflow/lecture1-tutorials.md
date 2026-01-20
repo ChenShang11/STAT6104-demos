@@ -33,6 +33,6 @@ Then I will pull his changes and we'll see them on my laptop.
 Oh wait but it wouldn't be a complete tutorial unless we force a merge error.
 Let's both edit this next line to say something different, and push:
 
-The quick brown fox jumps over the lazy dog.
+The quick brown fox jumps over the lazy dog. 
 
-And for our last trick, I will 
+And for our last trick, I will finish this quickly.
