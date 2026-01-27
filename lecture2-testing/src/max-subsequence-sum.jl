@@ -18,12 +18,14 @@ Compute the maximum sum over all subsequences
 """
 function max_subsequence_sum(a::Array)
 
+    n = length(a)
+
     # initialize maximum sum 
-    max_sum = -Inf
+    max_sum = 0
 
     # looping over all subsequences a[i:j]
     for i=1:n 
-        for j=(i+1):n
+        for j=i:n
 
             # evaluate the sum
             sum_val = sum(a[i:j])

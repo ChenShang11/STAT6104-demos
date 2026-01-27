@@ -17,9 +17,21 @@ end)
 # load the file containing the functions we want to test
 include("../src/max-subsequence-sum.jl")
 
-@test max_subsequence_sum([1,2,3,4]) == 10
+@testset verbose = true "Main Test" begin
+    @testset "1:n Sum Tests" begin
+        @test max_subsequence_sum([1,2,3,4]) == 10
+    end
 
-@test max_subsequence_sum([1,2,-2,-3]) == 1
+    @testset verbose = true "Corner Case" begin
+        @test max_subsequence_sum([]) == 0
+        @test max_subsequence_sum([-1, -1, -1]) == 0
+        @test max_subsequence_sum([1, -1, -1]) == 1
+    end
+
+    @testset "Tricky Instance" begin
+        @test max_subsequence_sum([1,2,-2,-3]) == 3
+    end
+end
 
 # TODO
 # 0. so what's up?
